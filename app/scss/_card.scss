@@ -1,0 +1,116 @@
+.card {
+    width: 20.3125rem;
+    height: 33.75rem;
+    background-color: $vdbcbg;
+    border-radius: 1rem;
+
+    &__img{
+        width: 17.5rem;
+        height: 17.5rem;
+        margin: 1.5rem;
+        background-image: url(/images/image-equilibrium.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border-radius: 5px;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        > div{
+            height: 100%;
+            width: 100%;
+            background-color: hsla(178, 100%, 50%, 0.4);
+            opacity: 0;
+            transition: 300ms ease-in-out;
+
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+
+    &__text1{
+
+
+        > h1{
+            margin: 0;
+            font-size: 1.375rem;
+            font-weight: 600;
+            color: $white;
+            transition: 300ms ease-in-out;
+
+            &:hover{
+                color: $cyan;
+                cursor: pointer;
+            }
+        }
+
+        > p{
+            margin: 0.5rem 0;
+            color: $softblue;
+        }
+    }
+
+    &__text2{
+        width: 100%;
+        height: 2.5rem;
+
+        > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            > img{
+                width: 0.9375rem;
+                height: 0.9375rem;
+            }
+
+            > p{
+                font-weight: 400;
+                padding: 0 0.4375rem;
+            }
+        }
+    }
+
+    &__line{
+        width: 100%;
+      
+      > hr{
+          color: $vdbl;
+          border-top: 1px solid $vdbl;
+          border-bottom: none;
+          border-left: none;
+          border-right: none;
+          width: 100%;
+      }
+
+    }
+
+    &__text3{
+        width: 100%;
+
+        > img{
+            width: 2.1875rem;
+            height: 2.1876rem;
+            border: 1px solid $white;
+            border-radius: 50%;
+        }
+
+        > p{
+            font-size: 1rem;
+            padding: 0 1.125rem;
+            color: $softblue;
+
+            > span{
+                transition: 300ms ease-in-out;
+
+                &:hover{
+                    color: $cyan;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

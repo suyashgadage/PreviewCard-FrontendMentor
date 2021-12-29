@@ -1,0 +1,193 @@
+body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  background-color: #0d192b;
+  font-size: 100%;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 300;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-c {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flex-r {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.px {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.py {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.card {
+  width: 20.3125rem;
+  height: 33.75rem;
+  background-color: #14253d;
+  border-radius: 1rem;
+}
+
+.card__img {
+  width: 17.5rem;
+  height: 17.5rem;
+  margin: 1.5rem;
+  background-image: url(/images/image-equilibrium.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 5px;
+}
+
+.card__img:hover {
+  cursor: pointer;
+}
+
+.card__img > div {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 255, 247, 0.4);
+  opacity: 0;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.card__img > div:hover {
+  opacity: 1;
+}
+
+.card__text1 > h1 {
+  margin: 0;
+  font-size: 1.375rem;
+  font-weight: 600;
+  color: white;
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.card__text1 > h1:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card__text1 > p {
+  margin: 0.5rem 0;
+  color: #8bacda;
+}
+
+.card__text2 {
+  width: 100%;
+  height: 2.5rem;
+}
+
+.card__text2 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__text2 > div > img {
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+
+.card__text2 > div > p {
+  font-weight: 400;
+  padding: 0 0.4375rem;
+}
+
+.card__line {
+  width: 100%;
+}
+
+.card__line > hr {
+  color: #2f415b;
+  border-top: 1px solid #2f415b;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  width: 100%;
+}
+
+.card__text3 {
+  width: 100%;
+}
+
+.card__text3 > img {
+  width: 2.1875rem;
+  height: 2.1876rem;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.card__text3 > p {
+  font-size: 1rem;
+  padding: 0 1.125rem;
+  color: #8bacda;
+}
+
+.card__text3 > p > span {
+  -webkit-transition: 300ms ease-in-out;
+  transition: 300ms ease-in-out;
+}
+
+.card__text3 > p > span:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

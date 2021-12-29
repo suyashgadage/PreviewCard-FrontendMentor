@@ -1,0 +1,58 @@
+body{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+    background-color: $vdbmbg;
+    font-size: 100%;
+}
+
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+
+
+p{
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+//FlexBox
+.flex{
+    display: flex;
+
+    &-c{
+        flex-direction: column;
+    }
+
+    &-r{
+        flex-direction: row;
+    }
+
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+}
+
+//Padding
+.px{ //24px
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.py{ //24px
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
